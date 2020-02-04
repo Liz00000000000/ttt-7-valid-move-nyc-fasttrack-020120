@@ -12,11 +12,10 @@
 def valid_move? (board, index)
   #true = "Valid Move"
   #false = "Position Taken"
-  if index.between(0,8) && board[index] == " "
+  if board[index].between(0,8) && board[index] == " "
     return true
   else
     return false
-    #puts "falsey value"
   end
 end
 # re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
