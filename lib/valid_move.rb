@@ -12,11 +12,10 @@
 def valid_move? (board, index)
   #true = "Valid Move"
   #false = "Position Taken"
-  if index.between?(0,8) && board[index] == " "
-    puts true
-    #puts "truth value"
+  if index.between(0,8) && board[index] == " "
+    return true
   else
-    puts false
+    return false
     #puts "falsey value"
   end
 end
